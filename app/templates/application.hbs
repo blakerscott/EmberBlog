@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
-
+{{#link-to 'index'}}<h1 id="title">Fight On, Your Time Ain't Long</h1>{{/link-to}}
+<nav>
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'contact'}}Contact us{{/link-to}}
+  {{#link-to 'admin'}}Admin{{/link-to}}
+</nav>
 {{outlet}}
