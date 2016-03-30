@@ -1,11 +1,5 @@
 <ul>
   {{#each model as |blogpost|}}
-     <img src={{blogpost.image}} >
-     <h2>{{blogpost.title}}</h2>
-     <h4>{{blogpost.artist}}</h4>
-     <h4>{{blogpost.catagory}}</h4>
-     <h4>{{blogpost.date}}</h4> 
-     <h4>{{blogpost.catagory}}</h4>
-     <p>{{blogpost.article}}</p>
+     {{blogpost-tile blogpost=blogpost}}
   {{/each}}
 </ul>
