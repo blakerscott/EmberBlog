@@ -1,7 +1,7 @@
 <p>THis is the admin page, where the administrator of the blog will be able to add blog posts to the site.</p>
 
-<ul>
+<<ul>
   {{#each model as |blogpost|}}
-     {{blogpost-tile blogpost=blogpost}}
+     {{admin-tile blogpost=blogpost destroyBlogpost="destroyBlogpost"}}
   {{/each}}
 </ul>
